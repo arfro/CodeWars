@@ -17,14 +17,18 @@ public class MorseCodeDecoder {
         
         StringBuilder result = new StringBuilder();
         
+        //Split string using triple space as a delimiter (indicates a new word)
         String[] words = morseCode.split("   ");
         
         
         for(int i=0; i < words.length; i++){
+          //split each word into using single space as a delimiter (indicates a letter)
           String[] letters = words[i].split(" ");
+          //append each extracted letter to a StringBuilder
           for(String letter : letters){
             result.append(MorseCode.get(letter));
           }
+          //append a space between words unless it's a last word
           if(i < words.length-1) result.append(" ");
         }
         
