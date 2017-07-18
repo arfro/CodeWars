@@ -22,7 +22,7 @@ public class MorseCodeDecoder {
         
         
         for(int i=0; i < words.length; i++){
-          //split each word into using single space as a delimiter (indicates a letter)
+          //split each word into letters using single space as a delimiter (indicates a letter)
           String[] letters = words[i].split(" ");
           //append each extracted letter to a StringBuilder
           for(String letter : letters){
