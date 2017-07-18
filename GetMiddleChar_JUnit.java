@@ -1,0 +1,21 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class GetMiddleChar_JUnit {
+  @Test
+  public void evenTests() {
+    assertEquals("es", Kata.getMiddle("test"));
+    assertEquals("dd", Kata.getMiddle("middle"));
+  }
+  
+  @Test
+  public void oddTests() {
+    assertEquals("t", Kata.getMiddle("testing"));
+    assertEquals("A", Kata.getMiddle("A"));
+  }
+  
+  @Test
+  public void edgeCases() {
+    assertEquals("", Kata.getMiddle("testing"));
+  }
+}
