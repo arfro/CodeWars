@@ -1,3 +1,11 @@
+/*
+
+Implement a function reverse_list which takes a singly-linked list of nodes and returns a matching list in the reverse order.
+
+Assume the presense of a class Node, which exposes the property next. next must either be set to the next Node in the list, or to None (or null) to indicate the end of the list.
+
+*/
+
 import java.util.Stack;
 import java.util.LinkedList;
 
