@@ -10,12 +10,8 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 public class EnoughIsEnough {
-
-  public static void printArray(int[] a){
-    for(int ad: a) System.out.println(ad);
-  }
   
-	public static int[] deleteNth(int[] elements, int maxOcurrences) {
+public static int[] deleteNth(int[] elements, int maxOcurrences) {
 		
     Map<Integer, Integer> occurences = new HashMap<>();
     ArrayList<Integer> result = new ArrayList<>();
