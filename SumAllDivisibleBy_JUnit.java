@@ -8,12 +8,12 @@ public class SumAllDivisibleBy_JUnit {
     }
     
     @Test
-    public void () SumAllDivisibleBy_solution_Zero(){
+    public void SumAllDivisibleBy_solution_Zero(){
       assertEquals(0, new Solution().solution(0));
     }
     
     @Test
-    public void () SumAllDivisibleBy_solution_Negative(){
+    public void SumAllDivisibleBy_solution_Negative(){
       assertEquals(0, new Solution().solution(-1));
     }
     
