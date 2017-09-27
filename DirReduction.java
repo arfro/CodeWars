@@ -18,6 +18,10 @@ public class DirReduction {
     
     public static String[] dirReduc(String[] arr) {
         
+        if(arr == null) return new String[]{};
+        //e.g. if array has less than 3 elements those elements will never be reducible
+        if(arr.length < 3) return arr;
+        
         // [0][0] - Horizontal axis (Y) - East/West
         // [0][1] - Vertical axis (X) - South/North 
         int[][] axis = new int[1][2];
