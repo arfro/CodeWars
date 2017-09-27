@@ -3,7 +3,7 @@ public class DirReduction {
     public static String[] dirReduc(String[] arr) {
         
         // [0][0] - Horizontal axis (Y) - East/West
-        // [0][1] - Vertical axis (Z) - South/North 
+        // [0][1] - Vertical axis (X) - South/North 
         int[][] axis = new int[1][2];
         
         for(String direction : arr){
